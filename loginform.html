@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./loginform.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- <h1 class="text-center text-info">Login</h1> -->
+    <section class="py-5 bg-light">
+      <div class="container bg-white">
+        <div class="mainRow row g-0">
+          <div class="col-lg-5 col-sm-12 col-md-12">
+            <div class="w-100">
+              <img
+                src="./image/loginImg.jpg"
+                alt="loginForm"
+                class="loginImage img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-lg-7 col-sm-12 col-md-12">
+            <h2 class="title text-center mt-3">Login form</h2>
+
+            <div
+              class="formContainer d-flex justify-content-center aligns-items-center"
+            >
+              <form class="w-50 px-3 py-3">
+                <label for="nam" class="form-label">Enter your name</label>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter User Name"
+                    id="name"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="psw" class="form-label">Enter password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Enter password"
+                    id="psw"
+                  />
+                </div>
+                <div class="text-center mb-3">
+                  <button class="loginBtn btn btn-primary text-center">
+                    Log In
+                  </button>
+                </div>
+                <div class="iconContainers">
+                  <i class="icon fa-brands fa-facebook"></i>
+                  <i class="icon fa-brands fa-google"></i>
+                  <i class="icon fa-solid fa-envelope"></i>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
