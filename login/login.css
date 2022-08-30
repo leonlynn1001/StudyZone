@@ -8,7 +8,7 @@ body {
   height: 100vh;
 }
 .formBg {
-  background: url("./image/login3.jpg") no-repeat;
+  background: url("../image/login3.jpg") no-repeat;
   width: 100%;
   height: 100vh;
   background-size: 100%;

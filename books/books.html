@@ -7,7 +7,7 @@
     <title>Books</title>
     <link
       rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
     />
     <link rel="stylesheet" href="./books.css" />
     <link
@@ -23,20 +23,45 @@
       <!-- nav bar -->
       <nav class="navBg navbar">
         <div class="container py-2">
-          <a class="navbar-brand fs-2 text-white"
-            href="./home.html"><i class="fa-solid fa-house"></i
+          <a class="navbar-brand fs-2 text-white" href="../home.html"
+            ><i class="fa-solid fa-house"></i
           ></a>
           <!-- <a class="nav-link text-white" href="./home.html">Home</a> -->
-          <a href="#" class="btn btn-light">
-            <i
-              class="fs-2 fa-solid fa-cart-arrow-down"
-              data-bs-toggle="offcanvas"
-              href="#cartsidebar"
-            ></i
+          <a
+            class="btn btn-light"
+            data-bs-toggle="offcanvas"
+            href="#cart-sidebar"
+            role="button"
+            aria-controls="cart-sidebar"
+          >
+            <i class="fs-2 fa-solid fa-cart-arrow-down"></i
           ></a>
         </div>
       </nav>
       <!-- nav end -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="cart-sidebar"
+        aria-labelledby="cartSidebarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="cartSidebarLabel">My Books</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <section class="cart-items">
+            <!-- <h2 class="text-white fs-3 fw-bold text-center">My Cart</h2> -->
+          </section>
+        </div>
+      </div>
+      <!-- offcanvas -->
+
       <h1 class="heading text-center text-white">
         Library<span><i class="headIcon fa-solid fa-book-open"></i></span>
       </h1>
@@ -307,14 +332,17 @@
     </section>
 
     <!-- mycart -->
-    <h2>My Cart</h2>
-    <section class="cart-items"></section>
-    <script src="./books.js"></script>
-     <!-- footer -->
+
+    <!-- <section class="cart-items">
+      <h2 class="text-white fs-3 fw-bold text-center">My Cart</h2>
+    </section> -->
+    <!-- footer -->
     <footer class="container-fluid">
       <div class="footText border-top border-top-2 py-5 text-center">
-      <strong class="fs-1 fw-bold">Made With 💙 By LeonLynn</strong>
+        <strong class="fs-1 fw-bold">Made With 💙 By LeonLynn</strong>
       </div>
     </footer>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./books.js"></script>
   </body>
 </html>
