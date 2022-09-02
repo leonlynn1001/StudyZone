@@ -32,7 +32,7 @@ body {
 .textHolder {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 5%;
   transform: translateX(-10px);
 }
 .textHolder a {
@@ -77,11 +77,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.imgContainer {
-  width: 30rem;
+/* .imgContainer {
+  min-width: 30rem;
+
   height: 20rem;
-}
-.imgContainer img {
+} */
+.student {
   width: 100%;
   height: 100%;
   object-fit: cover;
